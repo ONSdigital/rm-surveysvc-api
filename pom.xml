@@ -4,7 +4,7 @@
 
   <groupId>uk.gov.ons.ctp.product</groupId>
   <artifactId>surveysvc-api</artifactId>
-  <version>10.47.1-SNAPSHOT</version>
+  <version>10.47.1</version>
   <packaging>jar</packaging>
 
   <name>CTP : SurveySvc-Api</name>
