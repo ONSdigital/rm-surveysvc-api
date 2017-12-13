@@ -1,7 +1,23 @@
 language: java
 jdk: openjdk8
 
-before_install: cp .travis.settings.xml $HOME/.m2/settings.xml
+before_install:
+  # Checkout master branch not commit on master builds
+  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+    git checkout $TRAVIS_BRANCH;
+    fi
+  - cp .travis.settings.xml $HOME/.m2/settings.xml
+  - curl ifconfig.co|xargs echo "Travis IP address is ";
+
+script:
+  - mvn test -B
+  # Only release on master builds
+  - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
+    git config --global set user.email "travis@travis-ci.org";
+    git config --global set user.name "Travis CI";
+    mvn -B -Dusername=$GITHUB_API_KEY release:prepare;
+    mvn -B release:perform;
+    fi
 
 notifications:
   slack:
