@@ -2,7 +2,7 @@
   <modelVersion>4.0.0</modelVersion>
 
   <artifactId>surveysvc-api</artifactId>
-  <version>10.49.2-SNAPSHOT</version>
+  <version>10.49.2</version>
   <packaging>jar</packaging>
 
   <name>CTP : SurveySvc-Api</name>
@@ -31,7 +31,7 @@
     <url>https://github.com/ONSdigital/rm-surveysvc-api</url>
     <connection>scm:git:https://github.com/ONSdigital/rm-surveysvc-api</connection>
     <developerConnection>scm:git:https://github.com/ONSdigital/rm-surveysvc-api</developerConnection>
-    <tag>HEAD</tag>
+    <tag>surveysvc-api-10.49.2</tag>
   </scm>
 
   <build>
