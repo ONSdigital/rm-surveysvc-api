@@ -1,5 +1,6 @@
 [![Codacy Badge](https://api.codacy.com/project/badge/Grade/f2fbcb5e554b4bfe8176b191af662f3f)](https://www.codacy.com/app/sdcplatform/rm-surveysvc-api?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=ONSdigital/rm-surveysvc-api&amp;utm_campaign=Badge_Grade)
 [![Build Status](https://travis-ci.org/ONSdigital/rm-surveysvc-api.svg?branch=master)](https://travis-ci.org/ONSdigital/rm-surveysvc-api)
+[![codecov](https://codecov.io/gh/ONSdigital/rm-surveysvc-api/branch/master/graph/badge.svg)](https://codecov.io/gh/ONSdigital/rm-surveysvc-api)
 
 # Survey Service API
 This is the Survey Service public API model project.

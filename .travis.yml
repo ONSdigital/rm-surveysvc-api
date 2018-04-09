@@ -10,6 +10,7 @@ before_install:
   - curl ifconfig.co|xargs echo "Travis IP address is ";
 
 script:
+  - "mvn cobertura:cobertura"
   - mvn test -B
   # Only release on master builds
   - if [ "$TRAVIS_BRANCH" == "master" ] && [ "$TRAVIS_PULL_REQUEST" == "false" ]; then
@@ -18,6 +19,9 @@ script:
     mvn -B -Dusername=$GITHUB_API_KEY release:prepare;
     mvn -B release:perform;
     fi
+
+after_success:
+  - bash <(curl -s https://codecov.io/bash)
 
 notifications:
   slack:
