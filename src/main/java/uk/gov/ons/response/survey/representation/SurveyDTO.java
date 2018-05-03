@@ -16,4 +16,5 @@ public class SurveyDTO {
   private String longName;
   private String surveyRef;
   private String legalBasis;
+  private String legalBasisRef;
 }
