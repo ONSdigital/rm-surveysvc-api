@@ -11,10 +11,17 @@ import lombok.NoArgsConstructor;
 @Data
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class SurveyDTO {
+
+  public enum SurveyType {
+    Business,
+    Social,
+    Census
+  }
   private String id;
   private String shortName;
   private String longName;
   private String surveyRef;
   private String legalBasis;
   private String legalBasisRef;
+  private SurveyType surveyType;
 }
