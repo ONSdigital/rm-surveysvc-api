@@ -12,6 +12,11 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor(access = AccessLevel.PUBLIC)
 public class SurveyDTO {
 
+  /**
+   * This enum denotes the type of the survey.  Business and Social are currently actively used throughout.
+   * Census is supported as a survey type in the loosest sense in some areas of the system but not in others.
+   * Hence it may be deprecated when the real census comes around.
+   */
   public enum SurveyType {
     Business,
     Social,
