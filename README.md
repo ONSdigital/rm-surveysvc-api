@@ -7,6 +7,9 @@ This is the Survey Service public API model project.
 
 It simply contains the representation objects sent/returned to/from the Survey Service REST endpoints.
 
+# Code Styler
+To use the code styler please goto this url (https://github.com/google/google-java-format) and follow the Intellij instructions or Eclipse depending on what you use
+
 # Creating a release artifact
 There are no additional steps required to generate a release artifact. Travis takes care of all of this.
 
